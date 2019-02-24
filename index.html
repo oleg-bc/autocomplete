@@ -32,6 +32,17 @@ fetch(endpoint)
 
       });
   }
+
+
+  function displayMatches(){
+
+    console.log(this.value);
+  
+  }
+
+  const searchInput = document.querySelector('.search');
+  const suggestions=document.querySelector('.suggestions');
+  searchInput.addEventListener('change', displayMatches);//change event only works when user goes off the input
 </script>
 </body>
 </html>
